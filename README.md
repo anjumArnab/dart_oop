@@ -1234,10 +1234,9 @@ Explanation: `DatabaseService` cannot work without  `SQLiteHelper`. The helper i
 -   **Universal Inheritance:** Every single class in Dart, even if you don't use extends, implicitly inherits from the Object class, making inheritance universal (except for the Null class).
 -   **Full Understanding:** Just learning the _extends_ keyword is not enough. You must also learn about Abstract Classes & Methods, Interfaces (implements), Mixins (with), and Constructors in Inheritance (super).
 
-**Architectural & Preventative**
+**Architectural**
 -   **Why Arrows Point Upward:** The arrow in a UML diagram points from the subclass to the superclass because the subclass is the one explicitly stating it wants to extend/get the superclass's properties.
 -   **Danger of Copy-Paste:** Using copy-paste instead of inheritance leads to code redundancy and a critical maintenance issue: you must manually update the code in every location it was pasted.
--   **Preventing Inheritance:** You cannot use the _final_ keyword on a class in Dart. To prevent a class from being inherited, you can make its constructor private (e.g., _ClassA._()_).
 
 **Class Relationships**
 
