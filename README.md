@@ -1117,9 +1117,9 @@ class UserApi extends ApiService {
 **Types of Inheritance**
 | Type | Structure | Example |
 | --- | --- | --- |
-| Single | One superclass with one subclass | `class B extends A {}` |
-| Multi-level | Chain of inheritance | `class C extends B {}` where `class B extends A` |
-| Hierarchical | One superclass with multiple subclasses | `class Cat extends Animal`, `class Dog extends Animal` |
+| Single | One superclass with one subclass | `LoginRepository extends BaseRepository` |
+| Multi-level | Chain of inheritance | `MyHomePage extends BasePage`, and `BasePage extends AppPage` |
+| Hierarchical | One superclass with multiple subclasses | In a Flutter app: `PrimaryButton extends AppButton`, `SecondaryButton extends AppButton`, both inheriting shared styling and behavior from `AppButton` |
 | Multiple | Not supported directly | Use mixins instead of multiple inheritance |
 
 
