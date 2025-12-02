@@ -1240,10 +1240,10 @@ Explanation: `DatabaseService` cannot work without  `SQLiteHelper`. The helper i
 
 **Class Relationships**
 
--   **Inheritance (Is-A):** This is the relationship where the subclass is a kind of the superclass (e.g., An Employee Is-A Person).
+-   **Inheritance (Is-A):** This is the relationship where the subclass is a kind of the superclass (e.g., `AdminUser` is a `User`, inherits common user behavior like login, logout).
 -   **Composition & Aggregation (Has-A):** These are forms of Association (Has-A relationship), not inheritance.
--   **Aggregation (Weak Bounding):** Objects can exist independently (e.g., a Car Has-A Music Player).
--   **Composition (Strong Bounding):** Objects are mutually dependent (e.g., a Car Has-A Engine).
+	-   **Aggregation (Weak Bounding):** Objects can exist independently (e.g., `AuthService` has a `Logger`, service works even if `logger` changes).
+	-   **Composition (Strong Bounding):** Objects are mutually dependent (e.g., `UserProfile` has `ProfileSettings`, it cannot exist without settings).
     
 ## Method Overriding and Runtime Polymorphism
 
