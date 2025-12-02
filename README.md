@@ -1984,7 +1984,7 @@ Members of an interface cannot be accessed using the `super` keyword from the im
 | Purpose | Inherits a class, making it a superclass. | Inherits a class as an interface. |
 | Method Definition | Subclass gets complete method definitions from the superclass. | Implementing class gets only abstract method declarations (signatures). |
 | Multiple Inheritance | Only one class can be extended (single inheritance). | Multiple interfaces can be implemented in a single class. |
-| Method Overriding | Optional for subclass. | Compulsory for concrete class to override all interface methods. |
+| Method Overriding | Optional for subclass. | Compulsory for the concrete class to override all interface methods. |
 | Constructor Call | Superclass constructor is called before subclass constructor. | Interface constructor is NOT called by the implementing class. |
 | super Keyword | Can access superclass members from subclass. | Cannot access interface members via `super`. |
 | Instance Fields (Variables) | Subclass inherits fields; no override needed. | Implementing class must override all instance fields or provide getters/setters. |
@@ -1992,8 +1992,10 @@ Members of an interface cannot be accessed using the `super` keyword from the im
 
 ## Mixin
 
-Mixins in Dart are a way of using the code of a class again in multiple class hierarchies. A mixin is a class whose methods & properties can be used by other classes without sub-classing. It is a reusable chunk of code that can be plugged in to any class that needs this functionality . 
+Mixins in Dart are a way of using the code of a class again in multiple class hierarchies. A mixin is a class whose methods & properties can be used by other classes without sub-classing. It is a reusable chunk of code that can be plugged into any class that needs this functionality.
+
 **Creating and Using Mixins**
+
 Dart offers two ways to create a mixin:
 - **Using a Regular Class:**  Any class can be used as a mixin if it follows two restrictions: (below Dart 3)
 	- It must not have any explicit constructor.
@@ -2115,7 +2117,7 @@ class Guest {
 ```
 Explanation: `User` class – represents all users in the app (base class). Example: a user could be an Admin, Customer, or Moderator. `mixin AuthMixin on Use` – the `on` keyword means only classes that extend `User` can use this mixin. It ensures that `authenticate()` can safely use properties of User because all subclasses of User have it. `Admin` class – extends User and uses `AuthMixin`. It inherits `authenticate()` automatically and adds custom logic like `accessDashboard()`. `Guest` class – not a subclass of `User`, so using `AuthMixin` here would cause a compile-time error.
 
-### Key Questions and Answers on Dart Mixins`
+### Key Questions and Answers on Dart Mixins
 
 **Usage and Application**
 
