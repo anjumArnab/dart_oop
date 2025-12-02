@@ -320,7 +320,7 @@ class Student extends Person {
 ```
   
 ### Factory Constructor
-A factory constructor can return an existing instance or a new one. It must explicitly return an object. Used when object creation needs **control -** like returning an existing object, applying logic, or using a cache. A factory constructor is a special constructor defined with the _factory_ keyword. It does not always create a new object, but returns an existing instance or a new instance explicitly.
+A factory constructor can return an existing instance or a new one. It must explicitly return an object. Used when object creation needs **control -** like returning an existing object, applying logic, or using a cache. A factory constructor is a special constructor defined with the `factory` keyword. It does not always create a new object, but returns an existing instance or a new instance explicitly.
 
 Core Principles
 
@@ -328,7 +328,7 @@ Core Principles
 -   Non-Generative: Relies on other constructors for object creation.  
 -   No `this` Access: Cannot access instance members; can access static members.  
 -   No `super` Call: Cannot call a superclass constructor.
-- 
+
 | Use Case | Description | Example |
 | --- | --- | --- |
 | Factory Design Pattern | Return a subclass instance based on input. | Shape factory returns Triangle or Rectangle based on ShapeType |
