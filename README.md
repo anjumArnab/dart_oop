@@ -743,7 +743,7 @@ class Example {
 - No `this` Reference: Static methods have no access to the current object (`this`).	`this.name` is invalid.
 - Not for Local or Global Use: `static` can only be used for class members, not inside functions or global variables.
 - Access Rule: Static members should be accessed via the class name, not objects.
-`ClassName.variable` is valid but `object.variabl` is invalid.
+`ClassName.variable` is valid, but `object.variable` is invalid.
 
 Example
 ``` dart
@@ -834,7 +834,7 @@ void main() {
 }
 ```  
 
-Explanation: `setCount()` and `getCount()` are instance methods, so they can be called via objects. Both access the same static variable, so updating via one object affects all.  
+Explanation: `setCount()` and `getCount()` are instance methods so that they can be called via objects. Both access the same static variable, so updating via one object affects all.  
   
 - Using Non-Static Getters and Setters (Properties): Use Dart's property syntax (`get` and `set`) to make the static variable accessible through object properties.
 ``` dart
@@ -982,7 +982,7 @@ print(e.value); // calls getter
 | Return Type | Can have a return type (or defaults to dynamic) | Does not return a value (return type should be omitted) |
 | Access | Called like a property: `object.propertyName` | Called with assignment: `object.propertyName = value` |
 
-### Four Key Uses of Explicit Getters and Setters
+### Use case of Explicit Getters and Setters
 
 Explicit getters and setters are necessary when you need to introduce specific logic that implicit getters/setters cannot handle.
 
@@ -1059,7 +1059,7 @@ void main() {
   print(t.fahrenheit); // read in Fahrenheit
 }
 ```
-** When not to use them**
+**When not to use them**
 
 Avoid defining explicit getters and setters if they do nothing more than simply read or write the raw value of the field. This includes:
 
