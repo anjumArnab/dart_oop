@@ -1110,7 +1110,7 @@ class UserApi extends ApiService {
 | Benefit | Description | Example |
 | --- | --- | --- |
 | Code Reusability | Shared functionality lives in the superclass and is reused by subclasses. | Common methods like `display()` or `toString()`. |
-| Reduced Redundancy | Avoids writing duplicate code across similar classes. | `Cat` and `Dog` share `Animal` behavior. |
+| Reduced Redundancy | Avoids writing duplicate code across similar classes. | In a Flutter app, `LoginButton`, `SubmitButton`, and `CancelButton` all inherit styling and tap-handling behavior from a shared `AppButton` base class. |
 | Class Hierarchy | Creates structured and logical relationships. | `Widget > StatelessWidget > MyWidget` |
   
 
