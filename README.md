@@ -2120,7 +2120,7 @@ Explanation: `User` class – represents all users in the app (base class). Exam
 
 **Usage and Application**
 
-- **Multiple Mixins in One Class:** Yes, you can use multiple mixins with the `with` keyword (e.g., `_class A with B, C_`). If multiple mixins have a method with the same name, the method from the last mixin listed will override the others and be the one used by the class.
+- **Multiple Mixins in One Class:** Yes, you can use multiple mixins with the `with` keyword (e.g., `class A with B, C`). If multiple mixins have a method with the same name, the method from the last mixin listed will override the others and be the one used by the class.
 - **Mixin, Superclass, and Same Method:** If a superclass and a mixin have the same method, the mixin's method will take precedence and override the superclass's method.
 - **Method Signature Conflicts:** It is not allowed for a class to use multiple mixins that contain the same method name but with different signatures (parameters). This results in a conflict because Dart does not support method overloading.
 - **Sequence of Keywords:** The correct sequence when using all three keywords in a class definition is:
@@ -2138,7 +2138,7 @@ Example: `class SubClass extends SuperClass with MixinA, MixinB implements Inter
 - **Instantiation:** No, you cannot create an object of a mixin; it cannot be instantiated.
 - **Extends vs. Implements:** A mixin cannot `extend` another class or another mixin. A mixin can `implement` an interface or another mixin, but this means it only inherits the method signatures, not the implementation.
 - **Using a Class as a Mixin:** Yes, a regular class can act as a mixin, provided it has no constructors and doesn't extend any class other than `Object.`
-- **Static Members:** Yes, mixins can have static variables and methods. They are accessed directly using the mixin name (e.g., `_MixinName.staticMember_`).
+- **Static Members:** Yes, mixins can have static variables and methods. They are accessed directly using the mixin name (e.g., `MixinName.staticMember`).
 - **`extends` or `implements` Mixin:** A class cannot `extend` a mixin. A class can `implement` a mixin to use it as an interface, in which case the class must override all of the mixin's methods.
 
 **Methods and Overriding**
