@@ -3,7 +3,7 @@
 Object-Oriented Programming (OOP) in Dart is a programming paradigm that organizes code into **classes and objects**. A class defines a blueprint for creating objects that encapsulate **data (fields)** and **behaviour (methods)**. Dart supports core OOP principles - **encapsulation**, **inheritance**, **polymorphism**, and **abstraction**. Encapsulation hides internal details and exposes only necessary functionality using access control. Inheritance allows one class to reuse and extend another class’s features using the `extends` keyword. Polymorphism enables a single interface to represent multiple types, often through method overriding. Abstraction simplifies complex systems by defining essential behaviour with **abstract classes** or **interfaces**. Together, these concepts make Dart code more modular, reusable, and easier to maintain - key advantages when building scalable Flutter applications.
 
 ## Classes & Objects
-A blueprint or template that defines the structure and behavior of objects. It contains fields (data) and methods (behavior). An instance of a class that represents a specific entity (e.g., `Student`, `Book`, `Car`). A typical class defination contains
+A blueprint or template that defines the structure and behavior of objects. It contains fields (data) and methods (behavior). An instance of a class that represents a specific entity (e.g., `Student`, `Book`, `Car`). A typical class definition contains
 `class` keyword followed by naming with PascalCase(e.g., `Student`, `PersonData`).
 
 Can Contain:
@@ -1302,7 +1302,7 @@ void main() {
   // Printing in color...
 }
 ``` 
-The subclass enhances the parent’s logic using _super.methodName()_.
+The subclass enhances the parent’s logic using `super.methodName()`.
 
 ### Polymorphism
 Polymorphism allows a single reference type to behave differently based on the actual object it points to.
