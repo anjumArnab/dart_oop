@@ -2072,7 +2072,7 @@ class AuthService with ApiHandler, AnalyticsTracker {
 
 **Allowed in Mixins**
 
-- Instance and Static Variables (though instance variables must be accessed through the class that uses the mixin, as a mixin cannot be instantiated).`    
+- Instance and Static Variables (though instance variables must be accessed through the class that uses the mixin, as a mixin cannot be instantiated).
 - Concrete, Abstract, and Static Methods.    
 - Constants using `const` or `final`.    
 - A mixin can implement an interface.   
@@ -2084,8 +2084,7 @@ class AuthService with ApiHandler, AnalyticsTracker {
 - Explicit Constructors.
 - Cannot be instantiated (cannot create an object of a mixin).
 - Cannot extend any class other than Object.
-- Cannot be extended by a class.
-    
+- Cannot be extended by a class. 
 
 ### Limiting Mixin Use (The `on` Keyword)
 
