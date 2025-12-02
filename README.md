@@ -1044,7 +1044,6 @@ void main() {
 }
 
 ```
-  
 
 **Programmer Convenience/Clarity:** Using the `get` and `set` keywords makes the code more aligned with Dart's conventions and is often clearer than using traditional `get...()` and `set...()` methods.
 ``` dart
@@ -1064,7 +1063,7 @@ void main() {
 Avoid defining explicit getters and setters if they do nothing more than simply read or write the raw value of the field. This includes:
 
 -   **Public Fields:** They already have implicit getters/setters.    
--   **Private Fields:** when the explicit setter/getter performs no validation or calculation logic.
+-   **Private Fields:** When the explicit setter/getter performs no validation or calculation logic.
     
 
 ## Inheritance
@@ -1107,7 +1106,7 @@ class UserApi extends ApiService {
 }  
 ```
 
-** Benefits of Inheritance** 
+**Benefits of Inheritance** 
 | Benefit | Description | Example |
 | --- | --- | --- |
 | Code Reusability | Shared functionality lives in the superclass and is reused by subclasses. | Common methods like `display()` or `toString()`. |
