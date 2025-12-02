@@ -1672,7 +1672,8 @@ void main() {
 
 Abstract classes define a **common structure or contract** for subclasses. They ensure consistency across multiple implementations.
 
-Forcing Subclasses to Implement
+**Forcing Subclasses to Implement**
+
 ``` dart
 // Abstract database repository
 abstract class DatabaseRepository {
