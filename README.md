@@ -131,7 +131,7 @@ void main() {
 ```
   
 
-Encapsulation Principle: Encapsulation hides internal details and exposes only necessary parts.
+Encapsulation Principle: Encapsulation hides internal details and exposes only the necessary parts.
 ``` dart
 class BankAccount {
   double _balance = 0; // private
@@ -146,8 +146,8 @@ void main() {
 }
 ```
 **Public & Private Members**
-Each Dart file is a library by default. Private members are visible only within that library.
-Dart determines visibility based on files (libraries), not classes. There are no public or private keywords. A leading underscore _ makes a member private to its file. 
+- Each Dart file is a library by default. Private members are visible only within that library.
+- Dart determines visibility based on files (libraries), not classes. There are no public or private keywords. A leading underscore `_` makes a member private to its file. 
 
 Public Members: Members without `_` are public. Can be used from any file or library.
 ``` dart
@@ -299,7 +299,7 @@ void main() {
   var p3 = Person.ageOnly(30);
 }
 ```
-- Private Constructor: Prefix the constructor name with an underscore (_) to make it private to its library (file).
+- Private Constructor: Prefix the constructor name with an underscore `_` to make it private to its library (file).
 ``` dart
 class Database {
   Database._(); // Private constructor
@@ -576,7 +576,7 @@ class BankAccount {
       print('Negative deposit detected. Resetting to 0.');
       initialDeposit = 0;
     }
-    // Assign to fields_
+    // Assign to fields
     ownerName = name.trim();
     balance = initialDeposit;
 
@@ -589,7 +589,8 @@ class BankAccount {
 }
 ```
 
-**Rule for Non-Nullable and Final Fields** 
+**Rule for Non-Nullable and Final Fields**
+
 Non-nullable or final fields must be initialized immediately when the object is created. Valid Initialization Stages:
 ``` dart
 // Field Initializer
@@ -627,7 +628,6 @@ class Point {
   }
 }
 ```
-  
 
 Key Point: Always use Field Initializer or Initializer List for non-nullable/final fields unless the field is marked late.
 
