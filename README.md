@@ -635,7 +635,7 @@ Key Point: Always use Field Initializer or Initializer List for non-nullable/fin
 
 A  const constructor is declared using the `const` keyword and is used to create compile-time constant objects.
 
-Core Concept: Canonical Instanc
+Core Concept: Canonical Instance
 -   When two objects are created with the same constant values, Dart **reuses** the same memory instance (canonical instance).  
 -   This reduces memory usage and improves performance.
 ``` dart
